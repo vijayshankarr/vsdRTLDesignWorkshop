@@ -1,0 +1,13 @@
+# RTL Design using Verilog with SKY130 Technology
+
+#Introduction to RTL Design and Synthesis
+##Open source simulator - iverilog
+
+Simulator checks if the Design is matching the specs. Here, Design means a set of Verilog files which perform a functionality. 
+Note : Simulator only works when there is a change in input.
+The Testbench where the Design is to be tested and the Design are given as input to iVerilog. This gives us a `.vcd` file. `vcd` stands for Value Change Dump format. This contains the change in inputs and the outputs. This vcd is passed to `gtkwave` tool using which we view the waveform.
+
+iverilog good_mux.v tb_good_mux.v --> creates a.out file.
+Runinng /a.out --> dumps the vcd file
+open the .vcd file using gtkwave tool.
+uut - > Unit under test
